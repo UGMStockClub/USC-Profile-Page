@@ -3,7 +3,7 @@
 	import { FacebookSolid, InstagramSolid, WhatsappSolid, LinkedinSolid, MessageCaptionOutline, PhoneOutline } from 'flowbite-svelte-icons';
 </script>
 
-<div class="flex flex-col min-h-screen w-full">
+<div class="flex flex-col min-h-screen w-full -mt-[15rem]">
 	<main class="flex-grow">
 	</main>
 
