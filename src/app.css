@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap");
+
 @plugin 'flowbite/plugin';
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -15,6 +17,8 @@
   --color-primary-700: #eb4f27;
   --color-primary-800: #cc4522;
   --color-primary-900: #a5371b;
+  --font-Montserrat: "Montserrat"
+  --font-Roboto: "Roboto"
 }
 
 @source "../node_modules/flowbite-svelte/dist";
