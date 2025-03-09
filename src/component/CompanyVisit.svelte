@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="flex flex-col gap-[2rem]">
+<div class="flex flex-col gap-[2rem] mt-[2rem]">
 
   <div class="mx-[2rem] bg-red-100 rounded-lg overflow-hidden relative 
               after:content-[''] after:absolute after:inset-0 after:bg-black/50 

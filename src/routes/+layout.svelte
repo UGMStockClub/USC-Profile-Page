@@ -4,6 +4,7 @@
 	import MainFooter from '../component/MainFooter.svelte';
 	import UpperSection from '../component/UpperSection.svelte';
 	import CompanyVisit from '../component/CompanyVisit.svelte';
+    import Cards from '../component/Cards.svelte';
 	let { children } = $props();
 </script>
 
@@ -11,4 +12,5 @@
 {@render children()}
 <UpperSection/>
 <CompanyVisit/>
+<Cards/>
 <MainFooter/>
