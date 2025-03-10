@@ -9,8 +9,8 @@
 	let { children } = $props();
 </script>
 
-<MainNavbar/>
 {@render children()}
+<MainNavbar/>
 <UpperSection/>
 <CompanyVisit/>
 <Cards/>
