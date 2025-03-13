@@ -1,54 +1,95 @@
-<script>
+<script lang="ts">
 	// @ts-nocheck
-	import { FacebookSolid, InstagramSolid, WhatsappSolid, LinkedinSolid, MessageCaptionOutline, PhoneOutline } from 'flowbite-svelte-icons';
+	import { FacebookSolid, InstagramSolid, LinkedinSolid, MessageCaptionOutline, PhoneOutline, YoutubeSolid, TwitterSolid } from 'flowbite-svelte-icons';
+
+	// Data for the footer links (organized into columns)
+	const footerLinks = [
+		{
+			title: 'About',
+			links: [
+				{ name: 'Vision & Mission', href: '/vision-mission' }, // Example link
+				{ name: 'Our Team', href: '/team' },
+				{ name: 'History', href: '/history' },
+			],
+		},
+		{
+			title: 'Resources',
+			links: [
+				{ name: 'Event Calendar', href: '/events' },
+				{ name: 'Investment Guides', href: '/guides' }, // Example link
+				{ name: 'News & Updates', href: '/news' },
+			],
+		},
+		{
+			title: 'Contact',
+			links: [
+				{ name: 'Contact Form', href: '/contact' },
+				{ name: 'FAQ', href: '/faq' },
+			],
+		},
+	];
+
+	let currentYear = new Date().getFullYear();
 </script>
 
-<footer class="bg-[#222831] text-white px-[4rem] py-[3rem] w-full">
-	<div class="grid grid-cols-3">
-		<div class="flex flex-col items-center justify-self-start">
-			<div>
-				<img src="/images/logo_usc_full_white.svg" alt="USC" class="w-32 h-auto"/>
-			</div>
-			<!-- Ikon Sosial Media -->
-			<div class="flex justify-center space-x-4 mt-[1rem]">
-				<a href="/#" target="_blank" class="hover:text-gray-300">
-					<FacebookSolid class="w-6 h-6" />
-				</a>
-				<a href="/#" target="_blank" class="hover:text-gray-300">
-					<InstagramSolid class="w-6 h-6" />
-				</a>
-				<a href="/#" target="_blank" class="hover:text-gray-300">
-					<WhatsappSolid class="w-6 h-6" />
-				</a>
-				<a href="/#" target="_blank" class="hover:text-gray-300">
-					<LinkedinSolid class="w-6 h-6" />
-				</a>
-			</div>
-		</div>
-	
-		<div class="text-xl justify-self-end w-56">
-			<p class="ml-[1rem] font-bold">Contact Info</p>
-			<div class=" mt-2 ml-3">
-			<div class="flex items-center text-xs text-left space-x-2">
-				<MessageCaptionOutline class="w-6 h-6" />
-				<p>+62 123-456-789 Lorem Ipsum</p>
+<footer class="bg-slate-800 text-white py-16 px-8 lg:px-16">
+	<div class="container mx-auto">
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-12">
+			<!-- Column 1: Logo and Socials -->
+			<div class="md:col-span-2">
+				<img src="/images/logo_usc_full_white.svg" alt="USC Logo" class="w-48 h-auto mb-8" />
+				<div class="flex space-x-4 mb-4">
+					<a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
+						<FacebookSolid class="w-6 h-6" />
+					</a>
+					<a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300">
+						<InstagramSolid class="w-6 h-6" />
+					</a>
+					<a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500">
+						<LinkedinSolid class="w-6 h-6" />
+					</a>
+					<a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-red-400">
+                        <YoutubeSolid class="w-6 h-6" />
+                    </a>
+                    <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400">
+                        <TwitterSolid class="w-6 h-6" />
+                    </a>
+				</div>
+				<div>
+					<div class="flex items-center text-sm space-x-2 mb-2">
+						<MessageCaptionOutline class="w-5 h-5" />
+						<span>+62 123-456-789 Lorem Ipsum</span>
+					</div>
+					<div class="flex items-center text-sm space-x-2">
+						<PhoneOutline class="w-5 h-5" />
+						<span>loremipsum@gmail.com</span>
+					</div>
+				</div>
 			</div>
 
-			<div class="flex items-center text-xs text-left space-x-2">
-				<PhoneOutline class="w-6 h-6" />
-				<p>loremipsum@gmail.com</p>
-			</div>
-			</div>
+			<!-- Columns 2-4: Link Groups -->
+			{#each footerLinks as section}
+				<div>
+					<h3 class="text-lg font-semibold mb-4">{section.title}</h3>
+					<ul>
+						{#each section.links as link}
+							<li>
+								<a href={link.href} class="hover:underline hover:text-blue-300 text-sm">{link.name}</a>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			{/each}
 		</div>
-		
-		<div class="text-xl justify-self-end w-32 mr-[1rem]">
-			<p class="text-center font-bold">Address</p>
-			<p class="text-xs text-left  mt-2">Lorem ipsum dolor sit amet consectetur. Amet augue amet massa varius purus faucibus. Sagittis netus egestas eu eget justo euismod sit</p>
+
+		<!-- Large "USC" Text -->
+		<div class="mt-16">
+            <p class="text-8xl font-extrabold tracking-wider text-center" style="font-family: 'Arial Black', sans-serif;">USC</p> <!-- Adjust font and styling -->
+		</div>
+
+		<!-- Copyright -->
+		<div class="text-center mt-8 text-sm">
+			Copyright © {currentYear} UGM Stock Club. All rights reserved.
 		</div>
 	</div>
-		
-		<!-- Separate div for copyright with centered text -->
-		<div class="text-center mt-[2rem]">
-			<p  class=" text-xs">Copyright {new Date().getFullYear()} &copy; UGM Stock Club</p>
-		</div>
 </footer>
