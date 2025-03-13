@@ -1,7 +1,7 @@
 <script lang="ts">import { Section, ContentWithImage } from "flowbite-svelte-blocks";
 </script>
 
-<div class="p-[2rem] grid grid-cols-[3fr_1fr] mt-[5rem] ml-[5rem]">
+<div class="grid grid-cols-[3fr_1fr] mx-auto">
 	<div class="">
 		<h1 class="text-9xl font-Montserrat font-bold">
 			<span class="text-[#1d5d78]">UGM</span> 

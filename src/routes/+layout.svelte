@@ -1,18 +1,17 @@
 <script lang="ts">
+
+	// only use this file to give permanent components to every page, including pages under this directory
+
 	import '../app.css';
 	import MainNavbar from "../component/MainNavbar.svelte";
 	import MainFooter from '../component/MainFooter.svelte';
-	import UpperSection from '../component/UpperSection.svelte';
-	import CompanyVisit from '../component/CompanyVisit.svelte';
-    import Cards from '../component/Cards.svelte';
-    import InvClub from '../component/InvClub.svelte';
-	let { children } = $props();
+
+	// let { children } = $props();
+	// {@render children()}
 </script>
 
-{@render children()}
+<div class="flex flex-col gap-y-[4rem]">
 <MainNavbar/>
-<UpperSection/>
-<CompanyVisit/>
-<Cards/>
-<InvClub/>
+<slot />
 <MainFooter/>
+</div>
