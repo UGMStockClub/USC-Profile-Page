@@ -9,8 +9,9 @@
 	// {@render children()}
 </script>
 
-<div class="flex flex-col gap-y-[4rem]">
-<MainNavbar/>
-<slot />
-<MainFooter/>
+<div class="flex flex-col gap-y-[8rem] min-h-screen">
+	<MainNavbar/>
+	<slot />
+	<main class="flex-1"></main>
+	<MainFooter/>
 </div>
