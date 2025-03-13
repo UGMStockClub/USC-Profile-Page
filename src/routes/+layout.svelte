@@ -3,8 +3,7 @@
 	// only use this file to give permanent components to every page, including pages under this directory
 
 	import '../app.css';
-	import MainNavbar from "../component/MainNavbar.svelte";
-	import MainFooter from '../component/MainFooter.svelte';
+	import { MainNavbar, MainFooter } from '$lib';
 
 	// let { children } = $props();
 	// {@render children()}
