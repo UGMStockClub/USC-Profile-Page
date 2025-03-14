@@ -42,16 +42,16 @@
 					<a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
 						<FacebookSolid class="w-6 h-6" />
 					</a>
-					<a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300">
+					<a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300">
 						<InstagramSolid class="w-6 h-6" />
 					</a>
-					<a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500">
+					<a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500">
 						<LinkedinSolid class="w-6 h-6" />
 					</a>
-					<a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-red-400">
+					<a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-red-400">
                         <YoutubeSolid class="w-6 h-6" />
                     </a>
-                    <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400">
                         <TwitterSolid class="w-6 h-6" />
                     </a>
 				</div>
