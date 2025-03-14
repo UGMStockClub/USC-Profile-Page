@@ -7,24 +7,24 @@
 		{
 			title: 'About',
 			links: [
-				{ name: 'Vision & Mission', href: '/vision-mission' }, // Example link
-				{ name: 'Our Team', href: '/team' },
-				{ name: 'History', href: '/history' },
+				{ name: 'Vision & Mission', href: '#' }, // Example link
+				{ name: 'Our Team', href: '#' },
+				{ name: 'History', href: '#' },
 			],
 		},
 		{
 			title: 'Resources',
 			links: [
-				{ name: 'Event Calendar', href: '/events' },
-				{ name: 'Investment Guides', href: '/guides' }, // Example link
-				{ name: 'News & Updates', href: '/news' },
+				{ name: 'Event Calendar', href: '#' },
+				{ name: 'Investment Guides', href: '#' }, // Example link
+				{ name: 'News & Updates', href: '#' },
 			],
 		},
 		{
 			title: 'Contact',
 			links: [
-				{ name: 'Contact Form', href: '/contact' },
-				{ name: 'FAQ', href: '/faq' },
+				{ name: 'Contact Form', href: '#' },
+				{ name: 'FAQ', href: '#' },
 			],
 		},
 	];
@@ -39,7 +39,7 @@
 			<div class="md:col-span-2">
 				<img src="/images/logo_usc_full_white.svg" alt="USC Logo" class="w-48 h-auto mb-8" />
 				<div class="flex space-x-4 mb-4">
-					<a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
+					<a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
 						<FacebookSolid class="w-6 h-6" />
 					</a>
 					<a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300">
