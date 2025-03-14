@@ -1,17 +1,12 @@
 <script lang="ts">
-
-	// only use this file to give permanent components to every page, including pages under this directory
-
-	import '../app.css';
-	import { MainNavbar, MainFooter } from '$lib';
-
-	// let { children } = $props();
-	// {@render children()}
+    // Global layout with responsive classes using Tailwind CSS
+    import '../app.css';
+    import { MainNavbar, MainFooter } from '$lib';
 </script>
 
-<div class="flex flex-col gap-y-[8rem] min-h-screen">
-	<MainNavbar/>
-	<slot />
-	<main class="flex-1"></main>
-	<MainFooter/>
+<div class="flex flex-col gap-y-8 md:gap-y-12 min-h-screen">
+    <MainNavbar />
+    <slot />
+    <main class="flex-1 p-4 md:p-8"></main>
+    <MainFooter />
 </div>
