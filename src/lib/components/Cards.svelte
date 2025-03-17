@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-row justify-center items-center gap-x-[3.5rem]">
-  {#each ["/images/dzikran.png", "/images/download.jpg", "/images/dapit.jpg"] as imgSrc}
+  {#each ["/images/dzikran.webp", "/images/download.webp", "/images/dapit.webp"] as imgSrc}
     <div class="transition-transform duration-300 hover:-translate-y-2">
       <Card reverse={vCard} class=" w-full min-h-[400px] flex flex-col">
         <img src={imgSrc} alt="Card Image" class="w-full h-48 object-cover rounded-t-lg" />
