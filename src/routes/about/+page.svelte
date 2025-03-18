@@ -1,8 +1,9 @@
 <script>
+  import WhoAreWe from "$lib/components/WhoAreWe.svelte";  
+
   console.log("about page loaded!");
 </script>
 
-<div>
-  <h1>test about dulu ngab</h1>
-  <h2>test push ke branch about us</h2>
+<div class="mx-[1rem] lg:mx-[3rem] ">
+  <WhoAreWe/>
 </div>
