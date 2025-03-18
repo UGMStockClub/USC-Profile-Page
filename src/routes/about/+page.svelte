@@ -1,8 +1,7 @@
 <script>
-  import WhoAreWe from "$lib/components/WhoAreWe.svelte";  
-  import TextCard from "$lib/components/TextCard.svelte";
-
-  console.log("about page loaded!");
+  import WhoAreWe from "$lib/components/about_us/WhoAreWe.svelte";  
+  import TextCard from "$lib/components/about_us/TextCard.svelte";
+  import OurTeam from "$lib/components/about_us/OurTeam.svelte";
 </script>
 
 <div class="mx-[1rem] lg:mx-[3rem] flex flex-col gap-y-[4rem]">
@@ -21,4 +20,6 @@
       />
   </div>
   
+  <OurTeam/>
+
 </div>
