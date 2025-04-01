@@ -2,11 +2,11 @@
   import OurTeamPhoto from "./OurTeamPhoto.svelte";
 
   const members = [
-    {img_src: "/images/dapit.jpg", name:"Gawr Gura", description: "ICPC 2025 World Final Absolute Winner, Competitive Programmer, & Gawr Gura Fans"}
+    {img_src: "/images/dapit.webp", name:"Gawr Gura", description: "ICPC 2025 World Final Absolute Winner, Competitive Programmer, & Gawr Gura Fans"}
     ,
-    {img_src: "/images/download.jpg", name:"Sapran", description: "Cutest V-tuber in the world with largest number of subscriber in Youtube"}
+    {img_src: "/images/download.webp", name:"Sapran", description: "Cutest V-tuber in the world with largest number of subscriber in Youtube"}
     ,
-    {img_src: "/images/dzikran.png", name:"Dzikran", description: "Cutest V-tuber in the world with largest number of subscriber in Youtube"}
+    {img_src: "/images/dzikran.webp", name:"Dzikran", description: "Cutest V-tuber in the world with largest number of subscriber in Youtube"}
     ,
     {img_src: "/images/gura.png", name:"Gawr Gura", description: "Cutest V-tuber in the world with largest number of subscriber in Youtube"}
     ,
