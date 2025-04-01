@@ -5,7 +5,7 @@
 
 <div class="mx-[3rem] bg-red-100 rounded-4xl overflow-hidden relative">
 
-	<img src="/images/inv.png" alt="inv club" class="z-0 w-full"/>
+	<img src="/images/inv.webp" alt="inv club" class="z-0 w-full"/>
 
 	<div class="absolute inset-0 flex items-center justify-center translate-y-[-30%]">
 		<p class="font-bold text-white text-7xl text-center">Investment Club</p>
